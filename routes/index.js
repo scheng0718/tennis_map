@@ -1,12 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const apis = require('./apis')
+const admin = require('./modules/admin')
 
-router.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+router.use('/admin', admin)
+router.use('/')
 
-module.exports = {
-  apis,
-  router
-}
+module.exports = router
