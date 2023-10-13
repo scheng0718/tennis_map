@@ -16,7 +16,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Comment.init({
-    rating: DataTypes.SMALLINT,
     comment: DataTypes.TEXT,
     userId: DataTypes.BIGINT,
     courtId: DataTypes.BIGINT

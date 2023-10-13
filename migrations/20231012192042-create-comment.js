@@ -9,9 +9,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.BIGINT
       },
-      rating: {
-        type: Sequelize.SMALLINT
-      },
       comment: {
         type: Sequelize.TEXT
       },
