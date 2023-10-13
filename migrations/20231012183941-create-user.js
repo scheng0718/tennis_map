@@ -21,8 +21,14 @@ module.exports = {
       password: {
         type: Sequelize.STRING(100)
       },
-      is_admin: {
-        type: Sequelize.BOOLEAN
+      role: {
+        type: Sequelize.STRING(50)
+      },
+      avatar: {
+        type: Sequelize.STRING(255)
+      },
+      introduction: {
+        type: Sequelize.TEXT
       },
       created_at: {
         allowNull: false,
