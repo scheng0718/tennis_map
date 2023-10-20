@@ -4,11 +4,6 @@ const {
 } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
   class TennisCourt extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate (models) {
       // define association here
       TennisCourt.belongsTo(models.Type, { foreignKey: 'typeId' })
@@ -23,18 +18,21 @@ module.exports = (sequelize, DataTypes) => {
   TennisCourt.init({
     courtId: DataTypes.BIGINT,
     courtName: DataTypes.STRING(100),
-    street1: DataTypes.STRING(255),
-    street2: DataTypes.STRING(255),
+    houseNumber: DataTypes.STRING(50),
+    street: DataTypes.STRING(255),
     city: DataTypes.STRING(100),
-    stateOrProvince: DataTypes.STRING(100),
+    county: DataTypes.STRING(100),
+    state: DataTypes.STRING(100),
+    stateCode: DataTypes.STRING(50),
+    postalCode: DataTypes.STRING(50),
+    countryCode: DataTypes.STRING(50),
     country: DataTypes.STRING(100),
-    zipCode: DataTypes.STRING(50),
+    fullAddress: DataTypes.TEXT,
     latitude: DataTypes.DOUBLE,
     longitude: DataTypes.DOUBLE,
-    typeId: DataTypes.SMALLINT,
+    typeId: DataTypes.INTEGER,
     phone: DataTypes.STRING(100),
-    email: DataTypes.STRING(255),
-    description: DataTypes.TEXT
+    location: DataTypes.GEOMETRY('POINT')
   }, {
     sequelize,
     modelName: 'TennisCourt',

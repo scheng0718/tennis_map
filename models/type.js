@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Type.init({
-    typeId: DataTypes.SMALLINT,
+    typeId: DataTypes.INTEGER,
     type: DataTypes.STRING(50)
   }, {
     sequelize,

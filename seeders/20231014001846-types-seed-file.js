@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    const courtTypeData = ['public', 'private', 'membership', 'school']
+    const courtTypeData = ['Hard', 'Clay', 'Grass', 'Artificial Grass', 'Carpet']
     const courtTypeSeederData = courtTypeData.map(type => ({
       type: type,
       created_at: new Date(),

@@ -12,23 +12,35 @@ module.exports = {
       court_name: {
         type: Sequelize.STRING(100)
       },
-      street_1: {
-        type: Sequelize.STRING(255)
+      house_number: {
+        type: Sequelize.STRING(50)
       },
-      street_2: {
+      street: {
         type: Sequelize.STRING(255)
       },
       city: {
         type: Sequelize.STRING(100)
       },
-      state_or_province: {
+      county: {
         type: Sequelize.STRING(100)
+      },
+      state: {
+        type: Sequelize.STRING(100)
+      },
+      state_code: {
+        type: Sequelize.STRING(50)
+      },
+      postal_code: {
+        type: Sequelize.STRING(50)
+      },
+      country_code: {
+        type: Sequelize.STRING(50)
       },
       country: {
         type: Sequelize.STRING(100)
       },
-      zip_code: {
-        type: Sequelize.STRING(50)
+      full_address: {
+        type: Sequelize.TEXT
       },
       latitude: {
         type: Sequelize.DOUBLE
@@ -42,11 +54,8 @@ module.exports = {
       phone: {
         type: Sequelize.STRING(100)
       },
-      email: {
-        type: Sequelize.STRING(255)
-      },
-      description: {
-        type: Sequelize.TEXT
+      location: {
+        type: Sequelize.GEOMETRY('POINT', 4326)
       },
       created_at: {
         allowNull: false,
