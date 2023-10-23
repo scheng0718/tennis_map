@@ -639,7 +639,7 @@
           "Sat: 12:30 - 17:00",
           "Sun: 12:30 - 20:00"
         ],
-        "isOpen": false,
+        "isOpen": true,
         "structured": [
           {
             "start": "T110000",
@@ -734,7 +734,7 @@
           "Mon-Sat: 11:00 - 18:00",
           "Sun: 11:00 - 17:00"
         ],
-        "isOpen": false,
+        "isOpen": true,
         "structured": [
           {
             "start": "T110000",
