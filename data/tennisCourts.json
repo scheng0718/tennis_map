@@ -1,0 +1,1771 @@
+[
+  {
+    "title": "DH Distribution",
+    "id": "here:pds:place:8409q8vk-a56ef25b356744e2af3163d007888109",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "DH Distribution, 525 Obispo Rd, Half Moon Bay, CA 94019, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Mateo",
+      "city": "Half Moon Bay",
+      "street": "Obispo Rd",
+      "postalCode": "94019",
+      "houseNumber": "525"
+    },
+    "position": {
+      "lat": 37.50254,
+      "lng": -122.47159
+    },
+    "access": [
+      {
+        "lat": 37.50246,
+        "lng": -122.47137
+      }
+    ],
+    "distance": 46565,
+    "categories": [
+      {
+        "id": "600-6900-0094",
+        "name": "Sporting Goods Store",
+        "primary": true
+      },
+      {
+        "id": "800-8600-0000",
+        "name": "Sports Facility/Venue"
+      },
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "core"
+        },
+        "id": "1138985889"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "QJKLt37uuFcLW9OE_uy0_A"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+16505639600"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.dhtennis.net",
+            "categories": [
+              {
+                "id": "800-8600-0000"
+              },
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Fri: 08:00 - 17:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T080000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "SF Topspin Tennis",
+    "id": "here:pds:place:8408lxx5-09feb328d1ec06142678b0e3ee67d8e6",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "SF Topspin Tennis, 1101 Eucalyptus Dr, San Francisco, CA 94132-1401, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Stonestown",
+      "street": "Eucalyptus Dr",
+      "postalCode": "94132-1401",
+      "houseNumber": "1101"
+    },
+    "position": {
+      "lat": 37.73068,
+      "lng": -122.48392
+    },
+    "access": [
+      {
+        "lat": 37.73105,
+        "lng": -122.48396
+      }
+    ],
+    "distance": 51516,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "Ti7fn_xsZj9nxTdoXOIiVQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14153476017"
+          },
+          {
+            "value": "+14158060695"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.sftopspintennis.com"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon-Fri: 08:00 - 17:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T080000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tenacious Tennis Academy",
+    "id": "here:pds:place:8408lxx5-82a7bc2cfe5b0c6d6d15096faf1fa322",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Tenacious Tennis Academy, 1600 Holloway Ave, San Francisco, CA 94132-1740, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "San Francisco State University",
+      "street": "Holloway Ave",
+      "postalCode": "94132-1740",
+      "houseNumber": "1600"
+    },
+    "position": {
+      "lat": 37.72094,
+      "lng": -122.47708
+    },
+    "access": [
+      {
+        "lat": 37.72094,
+        "lng": -122.47706
+      }
+    ],
+    "distance": 51553,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "800-8600-0197",
+        "name": "Sports Activities"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "core"
+        },
+        "id": "1224910695"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "tIOxrJN9CKUsP1sm7v1xDg"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14153076114"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.TenaciousTennisAcademy.com",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Sun: 08:00 - 19:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T080000",
+            "duration": "PT11H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "West Sunset Tennis Courts",
+    "id": "here:pds:place:8408lxx5-35320e6a654d0e0224df15331d9d93c3",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "West Sunset Tennis Courts, 3151 Ortega St, San Francisco, CA 94122-4051, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Outer Sunset",
+      "street": "Ortega St",
+      "postalCode": "94122-4051",
+      "houseNumber": "3151"
+    },
+    "position": {
+      "lat": 37.75113,
+      "lng": -122.49633
+    },
+    "access": [
+      {
+        "lat": 37.7513,
+        "lng": -122.49634
+      }
+    ],
+    "distance": 51684,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "TqYehwIhAseZsGDYEdZ0bA"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14157537047"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bolinas Park Tennis Court",
+    "id": "here:pds:place:8408lxx5-e59a84aa5f2b0a622bc1b4016f04bbec",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Bolinas Park Tennis Court, 80 Brighton Ave, Bolinas, CA 94924-9781, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "Marin",
+      "city": "Bolinas",
+      "street": "Brighton Ave",
+      "postalCode": "94924-9781",
+      "houseNumber": "80"
+    },
+    "position": {
+      "lat": 37.90632,
+      "lng": -122.6864
+    },
+    "access": [
+      {
+        "lat": 37.90645,
+        "lng": -122.68597
+      }
+    ],
+    "distance": 51804,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "uleCh-vppnn2HxMIskoWlQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14154996387"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Cabrillo Park and Tennis Courts",
+    "id": "here:pds:place:8408lxx5-2cc1088cc178000e533fa5218002ccc5",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Cabrillo Park and Tennis Courts, 853 38th Ave, San Francisco, CA 94121, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Outer Richmond",
+      "street": "38th Ave",
+      "postalCode": "94121",
+      "houseNumber": "853"
+    },
+    "position": {
+      "lat": 37.77283,
+      "lng": -122.49834
+    },
+    "access": [
+      {
+        "lat": 37.77285,
+        "lng": -122.49817
+      }
+    ],
+    "distance": 52814,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "550-5510-0202",
+        "name": "Park-Recreation Area"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "qYZmK18bJ21fMeMP5c_gtA"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14158315500"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.cabrilloplayground.org",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          },
+          {
+            "value": "http://www.sfgov.org/site/uploadedfiles/recpark/Recreation_Programs/Tennis/tennis.pdf",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ],
+        "email": [
+          {
+            "value": "friends@cabrilloplayground.org",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "San Francisco Tennis Academy",
+    "id": "here:pds:place:8409q8yu-651eb1d4d0e24e81817521952bf49b20",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "San Francisco Tennis Academy, 34th Ave, San Francisco, CA 94121, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Outer Richmond",
+      "street": "34th Ave",
+      "postalCode": "94121"
+    },
+    "position": {
+      "lat": 37.77654,
+      "lng": -122.49448
+    },
+    "access": [
+      {
+        "lat": 37.77655,
+        "lng": -122.49416
+      }
+    ],
+    "distance": 53324,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "7kgRp5IGv46Yf8drCKNocg"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14154805494"
+          },
+          {
+            "value": "+14156191287"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.sanfrancisco.tennis"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon-Fri: 14:30 - 19:00",
+          "Sat: 09:00 - 19:00",
+          "Sun: 10:30 - 19:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T143000",
+            "duration": "PT04H30M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          },
+          {
+            "start": "T090000",
+            "duration": "PT10H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:SA"
+          },
+          {
+            "start": "T103000",
+            "duration": "PT08H30M",
+            "recurrence": "FREQ:DAILY;BYDAY:SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "SF Tennis Camps",
+    "id": "here:pds:place:8409q8yt-615f71122bca433487cd6c76510a21b1",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "SF Tennis Camps, 50 Phelan Ave, San Francisco, CA 94112, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Sunnyside",
+      "street": "Phelan Ave",
+      "postalCode": "94112",
+      "houseNumber": "50"
+    },
+    "position": {
+      "lat": 37.72405,
+      "lng": -122.45196
+    },
+    "access": [
+      {
+        "lat": 37.72405,
+        "lng": -122.45209
+      }
+    ],
+    "distance": 53686,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "s9qcNQKNH-Gaka90LPLcHA"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+16502781199"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon-Fri: 09:00 - 16:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT07H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Margaret Osborne Dupont Park Tennis Courts",
+    "id": "here:pds:place:8409q8yu-1b337b2d699031312171472d51e0f646",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Margaret Osborne Dupont Park Tennis Courts, 338 31st Ave, San Francisco, CA 94121, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Central Richmond",
+      "street": "31st Ave",
+      "postalCode": "94121",
+      "houseNumber": "338"
+    },
+    "position": {
+      "lat": 37.78273,
+      "lng": -122.49122
+    },
+    "access": [
+      {
+        "lat": 37.78269,
+        "lng": -122.49138
+      }
+    ],
+    "distance": 53944,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "i7ZsmA2iCk0rVnZkomW5nA"
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon-Fri: 09:00 - 18:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dupont Tennis Courts",
+    "id": "here:pds:place:840jx7ps-d0b65d07be9b0d7dd111226722c927e8",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Dupont Tennis Courts, 300 30th Ave, San Francisco, CA 94121, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Central Richmond",
+      "street": "30th Ave",
+      "postalCode": "94121",
+      "houseNumber": "300"
+    },
+    "position": {
+      "lat": 37.78349,
+      "lng": -122.49017
+    },
+    "access": [
+      {
+        "lat": 37.78347,
+        "lng": -122.49035
+      }
+    ],
+    "distance": 54067,
+    "categories": [
+      {
+        "id": "800-8600-0180",
+        "name": "Sports Complex/Stadium",
+        "primary": true
+      },
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "core"
+        },
+        "id": "1141730740"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14156017277"
+          }
+        ],
+        "www": [
+          {
+            "value": "HTTPS://SFRECPARK.ORG/DESTINATION/DUPONT-TENNIS-COURTS",
+            "categories": [
+              {
+                "id": "800-8600-0180"
+              }
+            ]
+          },
+          {
+            "value": "http://dupont-tennis-courts-san-francisco-ca.placestars.com",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Millbrae Racquet Club",
+    "id": "here:pds:place:8409q8vy-c8e7b0c2bc284f1f9b3a9641078338f0",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Millbrae Racquet Club, 301 Santa Paula Ave, Millbrae, CA 94030-2026, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Mateo",
+      "city": "Millbrae",
+      "street": "Santa Paula Ave",
+      "postalCode": "94030-2026",
+      "houseNumber": "301"
+    },
+    "position": {
+      "lat": 37.60648,
+      "lng": -122.39225
+    },
+    "access": [
+      {
+        "lat": 37.60664,
+        "lng": -122.39282
+      }
+    ],
+    "distance": 54543,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "800-8600-0180",
+        "name": "Sports Complex/Stadium"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "core"
+        },
+        "id": "1224933893"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "Tu7i2gtxdv8HcXUcajzEhQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+16505834345"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://www.millbraeracquetclub.net"
+          }
+        ],
+        "email": [
+          {
+            "value": "webmaster@millbraeracquetclub.com",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Sun: 08:00 - 19:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T080000",
+            "duration": "PT11H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "City Racquet Shop",
+    "id": "here:pds:place:8403fv6k-d278b689bc9d0a31c9dec9fa542ed9ce",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "City Racquet Shop, 1836 San Jose Ave, San Francisco, CA 94112-2454, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Mission Terrace",
+      "street": "San Jose Ave",
+      "postalCode": "94112-2454",
+      "houseNumber": "1836"
+    },
+    "position": {
+      "lat": 37.72812,
+      "lng": -122.44081
+    },
+    "access": [
+      {
+        "lat": 37.72808,
+        "lng": -122.4407
+      }
+    ],
+    "distance": 54766,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "600-6900-0094",
+        "name": "Sporting Goods Store"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "gBNyN6eWeLFsFS9NfNplPw"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "mJATZjKu5eyEVWYOfZNPeQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14158410580"
+          },
+          {
+            "value": "+18774174551",
+            "categories": [
+              {
+                "id": "600-6900-0094"
+              }
+            ]
+          }
+        ],
+        "email": [
+          {
+            "value": "info@cityracquetshop.com",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Wed-Fri: 11:00 - 19:00",
+          "Sat: 11:00 - 17:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T110000",
+            "duration": "PT08H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:WE,TH,FR"
+          },
+          {
+            "start": "T110000",
+            "duration": "PT06H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:SA"
+          }
+        ]
+      }
+    ],
+    "payment": {
+      "methods": [
+        {
+          "id": "mastercard",
+          "accepted": true
+        }
+      ]
+    }
+  },
+  {
+    "title": "Golden Gate Park Tennis Complex",
+    "id": "here:pds:place:8409q8yv-f79cdcaceb2643cbad782cdfda47510a",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Golden Gate Park Tennis Complex, 50 Bowling Green Dr, San Francisco, CA 94118, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Golden Gate Park",
+      "street": "Bowling Green Dr",
+      "postalCode": "94118",
+      "houseNumber": "50"
+    },
+    "position": {
+      "lat": 37.77012,
+      "lng": -122.45942
+    },
+    "access": [
+      {
+        "lat": 37.77057,
+        "lng": -122.45968
+      }
+    ],
+    "distance": 55553,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "550-5510-0202",
+        "name": "Park-Recreation Area"
+      },
+      {
+        "id": "550-5510-0206",
+        "name": "Recreation Center"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "45EgMLjqv5ESEgeg1Z1wUg"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14155812540",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          },
+          {
+            "value": "+14157537001"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://sfrecpark.org/destination/golden-gate-park/golden-gate-park-tennis-complex"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Sun: 09:00 - 18:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR,SA,SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Yuri's Tennis Services",
+    "id": "here:pds:place:8409q8yv-06d1f26fc0814d3e901f9a80a2798ef8",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Yuri's Tennis Services, 12 12th Ave, San Francisco, CA 94118-1109, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Lake Street",
+      "street": "12th Ave",
+      "postalCode": "94118-1109",
+      "houseNumber": "12"
+    },
+    "position": {
+      "lat": 37.78666,
+      "lng": -122.47099
+    },
+    "access": [
+      {
+        "lat": 37.78665,
+        "lng": -122.47114
+      }
+    ],
+    "distance": 55668,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "3j03vijtnvfzgHwCRU2Tqw"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14153851258"
+          }
+        ],
+        "email": [
+          {
+            "value": "yuri.tennis@yahoo.com"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon: 09:00 - 22:00",
+          "Tue-Sun: 08:00 - 22:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT13H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO"
+          },
+          {
+            "start": "T080000",
+            "duration": "PT14H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:TU,WE,TH,FR,SA,SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Grattan Tennis Court",
+    "id": "here:pds:place:8408lxx5-42765fcf06e50daccc2be9e26a66d224",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Grattan Tennis Court, 1192 Stanyan St, San Francisco, CA 94117, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Cole Valley",
+      "street": "Stanyan St",
+      "postalCode": "94117",
+      "houseNumber": "1192"
+    },
+    "position": {
+      "lat": 37.76241,
+      "lng": -122.45196
+    },
+    "access": [
+      {
+        "lat": 37.76237,
+        "lng": -122.45213
+      }
+    ],
+    "distance": 55684,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "26mDhK8Gfhs4lnJ_lwCVPg"
+      }
+    ],
+    "openingHours": [
+      {
+        "text": [
+          "Mon-Fri: 09:00 - 18:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Fort Scott Tennis Courts",
+    "id": "here:pds:place:8408lxx5-be27029e05dc06931b873e7fbc127034",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Fort Scott Tennis Courts, 1331 Wool Ct, San Francisco, CA 94129, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Presidio",
+      "street": "Wool Ct",
+      "postalCode": "94129",
+      "houseNumber": "1331"
+    },
+    "position": {
+      "lat": 37.7991,
+      "lng": -122.47324
+    },
+    "access": [
+      {
+        "lat": 37.79934,
+        "lng": -122.4733
+      }
+    ],
+    "distance": 56273,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "nQFcD6WXpUAC0rWCFieJNQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14154479622"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Broadway Tennis Center",
+    "id": "here:pds:place:8409q8vz-04647cfce469dcc0127f1455971aa3f9",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Broadway Tennis Center, 60 Edwards Ct, Burlingame, CA 94010-2413, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Mateo",
+      "city": "Burlingame",
+      "district": "Ingold-Milldale",
+      "street": "Edwards Ct",
+      "postalCode": "94010-2413",
+      "houseNumber": "60"
+    },
+    "position": {
+      "lat": 37.59341,
+      "lng": -122.36828
+    },
+    "access": [
+      {
+        "lat": 37.59338,
+        "lng": -122.3683
+      }
+    ],
+    "distance": 56370,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "800-8700-0296",
+        "name": "Clubhouse"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "tripadvisor"
+        },
+        "id": "7910492"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "Va4e-6xHkS93dDG0UyKyFQ"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+16505175999",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          },
+          {
+            "value": "+16505795915"
+          }
+        ],
+        "email": [
+          {
+            "value": "jasmine@broadwaytenniscenter.com",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Fri: 07:00 - 21:00",
+          "Sat, Sun: 07:00 - 20:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T070000",
+            "duration": "PT14H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          },
+          {
+            "start": "T070000",
+            "duration": "PT13H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:SA,SU"
+          }
+        ]
+      }
+    ],
+    "payment": {
+      "methods": [
+        {
+          "id": "mastercard",
+          "accepted": true
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noe Court Playground",
+    "id": "here:pds:place:8408lxx5-958e2108f3580f66c6188a884005bc78",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Noe Court Playground, Douglass St, San Francisco, CA 94114, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Castro",
+      "street": "Douglass St",
+      "postalCode": "94114"
+    },
+    "position": {
+      "lat": 37.75829,
+      "lng": -122.43935
+    },
+    "access": [
+      {
+        "lat": 37.7583,
+        "lng": -122.43912
+      }
+    ],
+    "distance": 56425,
+    "categories": [
+      {
+        "id": "550-5510-0202",
+        "name": "Park-Recreation Area",
+        "primary": true
+      },
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court"
+      },
+      {
+        "id": "800-8600-0199",
+        "name": "Basketball"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "QpdaZEaXOLTem_eQzC-fzw"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14157172872"
+          },
+          {
+            "value": "+14158312700",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ],
+        "www": [
+          {
+            "value": "https://sfrecpark.org/Facilities/Facility/Details/Upper-Noe-Recreation-Center-112",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Corona Heights Park",
+    "id": "here:pds:place:8409q8yv-fb9e6768e7eb4ba28aba1e849713837a",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Corona Heights Park, 1 Museum Way, San Francisco, CA 94114, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Francisco",
+      "city": "San Francisco",
+      "district": "Corona Heights",
+      "street": "Museum Way",
+      "postalCode": "94114",
+      "houseNumber": "1"
+    },
+    "position": {
+      "lat": 37.76438,
+      "lng": -122.44003
+    },
+    "access": [
+      {
+        "lat": 37.76447,
+        "lng": -122.44
+      }
+    ],
+    "distance": 56703,
+    "categories": [
+      {
+        "id": "550-5510-0202",
+        "name": "Park-Recreation Area",
+        "primary": true
+      },
+      {
+        "id": "550-5510-0359",
+        "name": "Trailhead"
+      },
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "core"
+        },
+        "id": "1138175713"
+      },
+      {
+        "supplier": {
+          "id": "tripadvisor"
+        },
+        "id": "265129"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "kgFGV2UIPqzswmd13LTWuQ"
+      },
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "tGCFC0PTjLbU5m7Euw2NJg"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+14158312700",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          },
+          {
+            "value": "+14158312750",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          },
+          {
+            "value": "+14158315500",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          },
+          {
+            "value": "+14158633709"
+          }
+        ],
+        "www": [
+          {
+            "value": "http://sfrecpark.org/destination/corona-heights-park",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              },
+              {
+                "id": "550-5510-0359"
+              }
+            ]
+          },
+          {
+            "value": "http://www.sfgov.org/site/uploadedfiles/recpark/Recreation_Programs/Tennis/tennis.pdf",
+            "categories": [
+              {
+                "id": "800-8600-0183"
+              }
+            ]
+          }
+        ],
+        "email": [
+          {
+            "value": "info@sfrecpark.org",
+            "categories": [
+              {
+                "id": "550-5510-0202"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Mon-Fri: 09:00 - 18:00"
+        ],
+        "isOpen": false,
+        "structured": [
+          {
+            "start": "T090000",
+            "duration": "PT09H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO,TU,WE,TH,FR"
+          }
+        ]
+      },
+      {
+        "categories": [
+          {
+            "id": "550-5510-0202"
+          }
+        ],
+        "text": [
+          "Mon: 08:00 - 18:00",
+          "Sun: 07:00 - 18:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T080000",
+            "duration": "PT10H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:MO"
+          },
+          {
+            "start": "T070000",
+            "duration": "PT11H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:SU"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Peninsula Table Tennis Club",
+    "id": "here:pds:place:8409q8vz-11551c300ced40eca583b3bee5245fe9",
+    "language": "en",
+    "ontologyId": "here:cm:ontology:tennis_court",
+    "resultType": "place",
+    "address": {
+      "label": "Peninsula Table Tennis Club, 1299 Old Bayshore Hwy, Burlingame, CA 94010, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "CA",
+      "state": "California",
+      "county": "San Mateo",
+      "city": "Burlingame",
+      "district": "Ingold-Milldale",
+      "street": "Old Bayshore Hwy",
+      "postalCode": "94010",
+      "houseNumber": "1299"
+    },
+    "position": {
+      "lat": 37.59257,
+      "lng": -122.36401
+    },
+    "access": [
+      {
+        "lat": 37.5926,
+        "lng": -122.36383
+      }
+    ],
+    "distance": 56727,
+    "categories": [
+      {
+        "id": "800-8600-0183",
+        "name": "Tennis Court",
+        "primary": true
+      },
+      {
+        "id": "600-6900-0094",
+        "name": "Sporting Goods Store"
+      },
+      {
+        "id": "800-8600-0000",
+        "name": "Sports Facility/Venue"
+      },
+      {
+        "id": "800-8700-0296",
+        "name": "Clubhouse"
+      }
+    ],
+    "references": [
+      {
+        "supplier": {
+          "id": "yelp"
+        },
+        "id": "6eacRXl71UJuwQ6QRnqmvA"
+      }
+    ],
+    "contacts": [
+      {
+        "phone": [
+          {
+            "value": "+16502740279",
+            "categories": [
+              {
+                "id": "600-6900-0094"
+              }
+            ]
+          },
+          {
+            "value": "+16503473280"
+          }
+        ]
+      }
+    ],
+    "openingHours": [
+      {
+        "categories": [
+          {
+            "id": "800-8600-0183"
+          }
+        ],
+        "text": [
+          "Tue, Thu: 15:00 - 22:00",
+          "Wed: 15:00 - 21:00",
+          "Fri: 16:00 - 21:00",
+          "Sat, Sun: 10:00 - 20:00"
+        ],
+        "isOpen": true,
+        "structured": [
+          {
+            "start": "T150000",
+            "duration": "PT07H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:TU,TH"
+          },
+          {
+            "start": "T150000",
+            "duration": "PT06H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:WE"
+          },
+          {
+            "start": "T160000",
+            "duration": "PT05H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:FR"
+          },
+          {
+            "start": "T100000",
+            "duration": "PT10H00M",
+            "recurrence": "FREQ:DAILY;BYDAY:SA,SU"
+          }
+        ]
+      }
+    ],
+    "payment": {
+      "methods": [
+        {
+          "id": "mastercard",
+          "accepted": true
+        }
+      ]
+    }
+  }
+]
