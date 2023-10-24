@@ -20,8 +20,8 @@ async function saveData (apiFunction, path, keyName) {
 }
 
 async function fetchTennisCourts () {
-  await saveData(hereApi.fetchData(), hereApiDataPath, 'items')
-  await saveData(googleMapsApi.fetchData(), googleMapsApiDataPath, 'results')
+  await saveData(hereApi.fetchDiscoverApi(), hereApiDataPath, 'items')
+  await saveData(googleMapsApi.fetchTextSearchApi(), googleMapsApiDataPath, 'results')
 }
 
 fetchTennisCourts()

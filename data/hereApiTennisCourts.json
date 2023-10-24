@@ -158,7 +158,7 @@
         "text": [
           "Mon-Fri: 10:00 - 16:00"
         ],
-        "isOpen": true,
+        "isOpen": false,
         "structured": [
           {
             "start": "T100000",
@@ -812,7 +812,7 @@
         "text": [
           "Mon-Fri: 10:00 - 16:00"
         ],
-        "isOpen": true,
+        "isOpen": false,
         "structured": [
           {
             "start": "T100000",
@@ -881,7 +881,7 @@
         "text": [
           "Mon-Sat: 09:00 - 17:00"
         ],
-        "isOpen": true,
+        "isOpen": false,
         "structured": [
           {
             "start": "T090000",
