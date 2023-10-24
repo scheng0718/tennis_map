@@ -3,27 +3,25 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    const uniqueTennisCourtsData = require('../data/tennisCourts.json')
+    const uniqueTennisCourtsData = require('../data/updatePhoneNumbers.json')
     const tennisCourtsSeederData = uniqueTennisCourtsData.map(tennisCourt => {
-      const phoneContact = tennisCourt.contacts ? tennisCourt.contacts.find(contact => contact.phone && contact.phone.length > 0) : null
-      const phone = phoneContact ? phoneContact.phone[0].value : null
       return {
-        court_name: tennisCourt.title,
-        house_number: tennisCourt.address.houseNumber,
-        street: tennisCourt.address.street,
-        city: tennisCourt.address.city,
-        county: tennisCourt.address.county,
-        state: tennisCourt.address.state,
-        state_code: tennisCourt.address.stateCode,
-        postal_code: tennisCourt.address.postalCode,
-        country_code: tennisCourt.address.countryCode,
-        country: tennisCourt.address.countryName,
-        full_address: `${tennisCourt.address.houseNumber} ${tennisCourt.address.street}, ${tennisCourt.address.city}, ${tennisCourt.address.stateCode} ${tennisCourt.address.postalCode}, ${tennisCourt.address.countryCode}`,
-        latitude: tennisCourt.position.lat,
-        longitude: tennisCourt.position.lng,
+        court_name: tennisCourt.court_name,
+        house_number: tennisCourt.house_number,
+        street: tennisCourt.street,
+        city: tennisCourt.city,
+        county: tennisCourt.county,
+        state: tennisCourt.state,
+        state_code: tennisCourt.state_code,
+        postal_code: tennisCourt.postal_code,
+        country_code: tennisCourt.country_code,
+        country: tennisCourt.country,
+        full_address: tennisCourt.full_address,
+        latitude: tennisCourt.latitude,
+        longitude: tennisCourt.longitude,
         type_id: 1,
-        phone: phone,
-        location: Sequelize.fn('ST_GeomFromText', `POINT(${tennisCourt.position.lng} ${tennisCourt.position.lat})`),
+        phone: tennisCourt.phone,
+        location: Sequelize.fn('ST_GeomFromText', `POINT(${tennisCourt.longitude} ${tennisCourt.latitude})`),
         created_at: new Date(),
         updated_at: new Date()
       }
