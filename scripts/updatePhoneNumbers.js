@@ -38,6 +38,7 @@ async function updatePhoneNumbers () {
   })
   const finalData = [...unchangedData, ...updatedPhoneData]
   fs.writeFileSync(outputPath, JSON.stringify(finalData, null, 2), 'utf-8')
+  console.log('Missing Phone data is updated. Updated data saved to updatePhoneNumbers.json')
 }
 
 updatePhoneNumbers()
