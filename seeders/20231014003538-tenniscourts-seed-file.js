@@ -27,6 +27,30 @@ module.exports = {
       }
     })
     await queryInterface.bulkInsert('TennisCourts', tennisCourtsSeederData, {})
+
+    const threshold = 0.0009
+
+    // De-duplicate based on the full address first (keeping the more complete information)
+    const deduplicateByAddress = `
+      DELETE FROM "TennisCourts" a
+      USING "TennisCourts" b
+      WHERE
+        a.court_id < b.court_id AND 
+        a.full_address = b.full_address AND
+        LENGTH(a.court_name) < LENGTH(b.court_name)
+    `
+    await queryInterface.sequelize.query(deduplicateByAddress)
+
+    // Then, de-duplicate by geolocation if they are within 100 meters of each other
+    const deduplicateByLocation = `
+      DELETE FROM "TennisCourts" a
+      USING "TennisCourts" b
+      WHERE
+        a.court_id < b.court_id AND 
+        LENGTH(a.court_name) < LENGTH(b.court_name) AND 
+        ST_DWithin(a.location, b.location, ${threshold})
+    `
+    await queryInterface.sequelize.query(deduplicateByLocation)
   },
 
   async down (queryInterface, Sequelize) {
