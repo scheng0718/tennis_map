@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    const uniqueTennisCourtsData = require('../data/addMissingCounty.json')
+    const uniqueTennisCourtsData = require('../data/removeInvalidHouseNumbers.json')
     const tennisCourtsSeederData = uniqueTennisCourtsData.map(tennisCourt => {
       return {
         court_name: tennisCourt.court_name,
