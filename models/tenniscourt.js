@@ -16,7 +16,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   TennisCourt.init({
-    courtId: DataTypes.BIGINT,
+    courtId: {
+      type: DataTypes.BIGINT,
+      primaryKey: true,
+      autoIncrement: true
+    },
     courtName: DataTypes.STRING(100),
     houseNumber: DataTypes.STRING(50),
     street: DataTypes.STRING(255),

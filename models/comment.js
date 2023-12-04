@@ -16,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Comment.init({
+    commentId: {
+      type: DataTypes.BIGINT,
+      primaryKey: true,
+      autoIncrement: true
+    },
     comment: DataTypes.TEXT,
     userId: DataTypes.BIGINT,
     courtId: DataTypes.BIGINT

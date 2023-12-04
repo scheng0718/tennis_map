@@ -14,7 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Favorite.init({
-    favoriteId: DataTypes.BIGINT,
+    favoriteId: {
+      type: DataTypes.BIGINT,
+      primaryKey: true,
+      autoIncrement: true
+    },
     userId: DataTypes.BIGINT,
     courtId: DataTypes.BIGINT
   }, {
