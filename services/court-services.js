@@ -1,4 +1,6 @@
 const { Comment, TennisCourt, Type, User } = require('../models')
+const { Op } = require('sequelize')
+
 const courtServices = {
   getCourts: (req, cb) => {
     return TennisCourt.findAll({ raw: true })
@@ -32,6 +34,30 @@ const courtServices = {
     })
       .then(tennisCourt => {
         return cb(null, { tennisCourt })
+      })
+      .catch(err => cb(err))
+  },
+  getCourtsByMap: (req, cb) => {
+    const minLat = parseFloat(req.query.minLat)
+    const maxLat = parseFloat(req.query.maxLat)
+    const minLng = parseFloat(req.query.minLng)
+    const maxLng = parseFloat(req.query.maxLng)
+
+    return TennisCourt.findAll({
+      where: {
+        latitude: {
+          [Op.between]: [minLat, maxLat]
+        },
+        longitude: {
+          [Op.between]: [minLng, maxLng]
+        }
+      },
+      raw: true
+    })
+      .then(tennisCourts => {
+        return cb(null, {
+          tennisCourts
+        })
       })
       .catch(err => cb(err))
   }
