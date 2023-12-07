@@ -81,12 +81,12 @@ const courtServices = {
       cb(err)
     }
   },
-  getCourtsBySearch: (req, cb) => {
+  getCourtsBySearch: async (req, cb) => {
     const { cityName, stateCode, postalCode } = req.query
+    const whereCondition = {}
     if (!cityName && !stateCode && !postalCode) {
       return cb(null, { message: 'Please provide at least one condition' })
     }
-    const whereCondition = {}
     if (cityName) {
       whereCondition.city = cityName
     }
@@ -98,15 +98,15 @@ const courtServices = {
         [Op.like]: `${postalCode}%`
       }
     }
-
-    TennisCourt.findAll({
-      where: whereCondition,
-      raw: true
-    })
-      .then(tennisCourts => {
-        return cb(null, { tennisCourts })
+    try {
+      const tennisCourts = await TennisCourt.findAll({
+        where: whereCondition,
+        raw: true
       })
-      .catch(err => cb(err))
+      return cb(null, { tennisCourts })
+    } catch (err) {
+      cb(err)
+    }
   }
 }
 
