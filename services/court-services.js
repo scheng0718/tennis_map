@@ -10,31 +10,32 @@ const courtServices = {
       cb(err)
     }
   },
-  getCourt: (req, cb) => {
+  getCourt: async (req, cb) => {
     const id = req.params.courtId
     const page = parseInt(req.query.page) || 1
     const limit = parseInt(req.query.limit) || 10
     const offset = (page - 1) * limit
-    return TennisCourt.findByPk(id, {
-      include: [
-        Type,
-        {
-          model: Comment,
-          include: User,
-          limit: limit,
-          offset: offset
-        },
-        {
-          model: User,
-          as: 'FavoritedUsers',
-          attributes: { exclude: ['password'] }
-        }
-      ]
-    })
-      .then(tennisCourt => {
-        return cb(null, { tennisCourt })
+    try {
+      const tennisCourt = await TennisCourt.findByPk(id, {
+        include: [
+          Type,
+          {
+            model: Comment,
+            include: User,
+            limit: limit,
+            offset: offset
+          },
+          {
+            model: User,
+            as: 'FavoritedUsers',
+            attributes: { exclude: ['password'] }
+          }
+        ]
       })
-      .catch(err => cb(err))
+      return cb(null, { tennisCourt })
+    } catch (err) {
+      cb(err)
+    }
   },
   getCourtsByMap: (req, cb) => {
     const minLat = parseFloat(req.query.minLat)
