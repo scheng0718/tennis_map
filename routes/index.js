@@ -7,6 +7,7 @@ const admin = require('./modules/admin')
 
 router.use('/admin', admin)
 
+router.get('/courts/nearby', courtController.getNearByCourts)
 router.get('/courts/map', courtController.getCourtsByMap)
 router.get('/courts/:courtId', courtController.getCourt)
 router.get('/courts', courtController.getCourts)
