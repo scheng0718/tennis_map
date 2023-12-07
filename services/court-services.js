@@ -59,27 +59,27 @@ const courtServices = {
       cb(err)
     }
   },
-  getNearByCourts: (req, cb) => {
+  getNearByCourts: async (req, cb) => {
     const userLat = parseFloat(req.query.latitude)
     const userLng = parseFloat(req.query.longitude)
     const radius = parseFloat(req.query.radius)
-
-    return TennisCourt.findAll({
-      where: Sequelize.where(
-        Sequelize.fn(
-          'ST_DistanceSpheroid',
-          Sequelize.fn('ST_MakePoint', userLng, userLat),
-          Sequelize.fn('ST_MakePoint', Sequelize.col('longitude'), Sequelize.col('latitude'))
+    try {
+      const tennisCourts = await TennisCourt.findAll({
+        where: Sequelize.where(
+          Sequelize.fn(
+            'ST_DistanceSpheroid',
+            Sequelize.fn('ST_MakePoint', userLng, userLat),
+            Sequelize.fn('ST_MakePoint', Sequelize.col('longitude'), Sequelize.col('latitude'))
+          ),
+          '<=',
+          radius * 1000
         ),
-        '<=',
-        radius * 1000
-      ),
-      raw: true
-    })
-      .then(tennisCourts => {
-        return cb(null, { tennisCourts })
+        raw: true
       })
-      .catch(err => cb(err))
+      return cb(null, { tennisCourts })
+    } catch (err) {
+      cb(err)
+    }
   },
   getCourtsBySearch: (req, cb) => {
     const { cityName, stateCode, postalCode } = req.query
