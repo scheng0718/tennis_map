@@ -2,14 +2,13 @@ const { Comment, TennisCourt, Type, User } = require('../models')
 const { Sequelize, Op } = require('sequelize')
 
 const courtServices = {
-  getCourts: (req, cb) => {
-    return TennisCourt.findAll({ raw: true })
-      .then(tennisCourts => {
-        return cb(null, {
-          tennisCourts
-        })
-      })
-      .catch(err => cb(err))
+  getCourts: async (req, cb) => {
+    try {
+      const tennisCourts = await TennisCourt.findAll({ raw: true })
+      return cb(null, tennisCourts)
+    } catch (err) {
+      cb(err)
+    }
   },
   getCourt: (req, cb) => {
     const id = req.params.courtId
