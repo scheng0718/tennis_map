@@ -2,12 +2,19 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 const express = require('express')
+const session = require('express-session')
 const app = express()
 const router = require('./routes')
 const PORT = 3000
+const SESSION_SECRET = 'secret'
 
 app.use(express.static('public'))
 app.use(express.json())
+app.use(session({
+  secret: SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}))
 app.use('/api', router)
 app.get('/', (req, res) => {
   res.send('Hello Tennis Fans!')
