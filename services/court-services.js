@@ -37,29 +37,27 @@ const courtServices = {
       cb(err)
     }
   },
-  getCourtsByMap: (req, cb) => {
+  getCourtsByMap: async (req, cb) => {
     const minLat = parseFloat(req.query.minLat)
     const maxLat = parseFloat(req.query.maxLat)
     const minLng = parseFloat(req.query.minLng)
     const maxLng = parseFloat(req.query.maxLng)
-
-    return TennisCourt.findAll({
-      where: {
-        latitude: {
-          [Op.between]: [minLat, maxLat]
+    try {
+      const tennisCourts = await TennisCourt.findAll({
+        where: {
+          latitude: {
+            [Op.between]: [minLat, maxLat]
+          },
+          longitude: {
+            [Op.between]: [minLng, maxLng]
+          }
         },
-        longitude: {
-          [Op.between]: [minLng, maxLng]
-        }
-      },
-      raw: true
-    })
-      .then(tennisCourts => {
-        return cb(null, {
-          tennisCourts
-        })
+        raw: true
       })
-      .catch(err => cb(err))
+      return cb(null, { tennisCourts })
+    } catch (err) {
+      cb(err)
+    }
   },
   getNearByCourts: (req, cb) => {
     const userLat = parseFloat(req.query.latitude)
