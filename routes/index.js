@@ -3,6 +3,7 @@ const router = express.Router()
 const { apiErrorHandler } = require('../middlewares/error-handler')
 const courtController = require('../controllers/court-controller')
 const commentController = require('../controllers/comment-controller')
+const navigationController = require('../controllers/navigation-controller')
 const admin = require('./modules/admin')
 
 router.use('/admin', admin)
@@ -14,6 +15,8 @@ router.get('/courts/:courtId', courtController.getCourt)
 router.get('/courts', courtController.getCourts)
 
 router.get('/comments/:courtId', commentController.getCommentsByCourt)
+
+router.get('/navigation/:courtId', navigationController.getDirection)
 
 router.use('/', apiErrorHandler)
 
