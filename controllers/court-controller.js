@@ -11,6 +11,9 @@ const courtController = {
   },
   getNearByCourts: (req, res, next) => {
     courtServices.getNearByCourts(req, (err, data) => err ? next(err) : res.json({ status: 'success', data }))
+  },
+  getCourtsBySearch: (req, res, next) => {
+    courtServices.getCourtsBySearch(req, (err, data) => err ? next(err) : res.json({ status: 'success', data }))
   }
 }
 module.exports = courtController

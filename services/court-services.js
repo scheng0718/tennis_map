@@ -82,6 +82,33 @@ const courtServices = {
         return cb(null, { tennisCourts })
       })
       .catch(err => cb(err))
+  },
+  getCourtsBySearch: (req, cb) => {
+    const { cityName, stateCode, postalCode } = req.query
+    if (!cityName && !stateCode && !postalCode) {
+      return cb(null, { message: 'Please provide at least one condition' })
+    }
+    const whereCondition = {}
+    if (cityName) {
+      whereCondition.city = cityName
+    }
+    if (stateCode) {
+      whereCondition.stateCode = stateCode
+    }
+    if (postalCode) {
+      whereCondition.postalCode = {
+        [Op.like]: `${postalCode}%`
+      }
+    }
+
+    TennisCourt.findAll({
+      where: whereCondition,
+      raw: true
+    })
+      .then(tennisCourts => {
+        return cb(null, { tennisCourts })
+      })
+      .catch(err => cb(err))
   }
 }
 
