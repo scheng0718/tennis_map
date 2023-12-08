@@ -5,6 +5,7 @@ const courtController = require('../controllers/court-controller')
 const commentController = require('../controllers/comment-controller')
 const navigationController = require('../controllers/navigation-controller')
 const admin = require('./modules/admin')
+const passport = require('../config/passport')
 const { authenticated, authenticatedAdmin } = require('../middlewares/auth')
 const { apiErrorHandler } = require('../middlewares/error-handler')
 
@@ -20,6 +21,7 @@ router.get('/comments/:courtId', authenticated, commentController.getCommentsByC
 
 router.get('/navigation/:courtId', authenticated, navigationController.getDirection)
 
+router.post('/signIn', passport.authenticate('local', { session: false }), userController.signIn)
 router.post('/signUp', userController.signUp)
 
 router.use('/', apiErrorHandler)
