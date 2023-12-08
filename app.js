@@ -3,6 +3,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 const express = require('express')
 const session = require('express-session')
+const passport = require('passport')
+const flash = require('connect-flash')
 const app = express()
 const router = require('./routes')
 const PORT = 3000
@@ -15,6 +17,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(flash())
 app.use('/api', router)
 app.get('/', (req, res) => {
   res.send('Hello Tennis Fans!')
