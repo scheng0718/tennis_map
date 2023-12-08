@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const userController = require('../controllers/user-controller')
 const courtController = require('../controllers/court-controller')
 const commentController = require('../controllers/comment-controller')
 const navigationController = require('../controllers/navigation-controller')
@@ -18,6 +19,8 @@ router.get('/courts', authenticated, courtController.getCourts)
 router.get('/comments/:courtId', authenticated, commentController.getCommentsByCourt)
 
 router.get('/navigation/:courtId', authenticated, navigationController.getDirection)
+
+router.post('/signUp', userController.signUp)
 
 router.use('/', apiErrorHandler)
 
