@@ -3,6 +3,7 @@ const passportJWT = require('passport-jwt')
 const LocalStrategy = require('passport-local')
 const { User, TennisCourt } = require('../models')
 const bcrypt = require('bcryptjs')
+const { isTokenBlacklisted } = require('../middlewares/checkBlacklist')
 
 const JWTStrategy = passportJWT.Strategy
 const ExtractJWT = passportJWT.ExtractJwt
@@ -37,12 +38,20 @@ const jwtOptions = {
 }
 passport.use(new JWTStrategy(jwtOptions, async (jwtPayload, cb) => {
   try {
-    const user = await User.findByPk(jwtPayload.id, {
+    const token = `blacklist_${jwtPayload.jti}`
+    if (await isTokenBlacklisted(token)) {
+      return cb(null, false)
+    }
+    const user = await User.findByPk(jwtPayload.userId, {
       include: [
         { model: TennisCourt, as: 'FavortiedCourts' }
       ]
     })
-    return cb(null, user)
+    if (user) {
+      return cb(null, user)
+    } else {
+      return cb(null, false)
+    }
   } catch (err) {
     cb(err)
   }
