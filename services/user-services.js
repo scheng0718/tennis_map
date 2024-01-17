@@ -1,6 +1,8 @@
 const { User } = require('../models')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const uuid = require('uuid')
+const redisClient = require('../config/redisConfig')
 const userServices = {
   signUp: async (req, cb) => {
     const { name, email, password, passwordCheck } = req.body
@@ -33,14 +35,31 @@ const userServices = {
     try {
       const userData = req.user.toJSON()
       delete userData.password
-      const token = jwt.sign(userData, process.env.JWT_SECRET, { expiresIn: '30d' })
+      const payload = {
+        ...userData,
+        jti: uuid.v4()
+      }
+      const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' })
       return cb(null, {
         token,
-        user: userData
+        user: payload
       })
     } catch (err) {
       cb(err)
     }
+  },
+  signOut: async (req, cb) => {
+    const token = req.headers.authorization.split(' ')[1]
+    const decodedToken = jwt.decode(token)
+    const jti = decodedToken.jti
+    req.logout(err => {
+      if (err) {
+        return cb(err)
+      } else {
+        redisClient.set(`blacklist_${jti}`, 'blacklisted', 'EX', 4000)
+        return cb(null, { message: 'Successfully signed out!' })
+      }
+    })
   }
 }
 

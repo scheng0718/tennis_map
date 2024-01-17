@@ -23,6 +23,7 @@ router.get('/navigation/:courtId', authenticated, navigationController.getDirect
 
 router.post('/signIn', passport.authenticate('local', { session: false }), userController.signIn)
 router.post('/signUp', userController.signUp)
+router.post('/signOut', authenticated, userController.signOut)
 
 router.use('/', apiErrorHandler)
 

@@ -5,6 +5,9 @@ const userController = {
   },
   signIn: (req, res, next) => {
     userServices.signIn(req, (err, data) => err ? next(err) : res.json({ status: 'success', data }))
+  },
+  signOut: (req, res, next) => {
+    userServices.signOut(req, (err, data) => err ? next(err) : res.json({ status: 'success', data }))
   }
 }
 
