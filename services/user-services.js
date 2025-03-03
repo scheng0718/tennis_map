@@ -16,14 +16,14 @@ const userServices = {
       if (password !== passwordCheck) {
         throw new Error('Passwords do not match')
       }
-      const user = await User.findOne({ where: { email: email } })
+      const user = await User.findOne({ where: { email: email.toLowerCase() } })
       if (user) {
         throw new Error('Email already exists')
       }
       const hash = await bcrypt.hash(req.body.password, 10)
       const newUser = await User.create({
         name: name,
-        email: email,
+        email: email.toLowerCase(),
         password: hash
       })
       return cb(null, { user: newUser })
