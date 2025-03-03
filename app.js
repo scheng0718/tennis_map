@@ -12,10 +12,12 @@ const SESSION_SECRET = 'secret'
 
 app.use(express.static('public'))
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 app.use(session({
   secret: SESSION_SECRET,
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  cookie: { secure: process.env.NODE_ENV === 'production' }
 }))
 app.use(passport.initialize())
 app.use(passport.session())
