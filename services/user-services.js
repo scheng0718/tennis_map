@@ -7,15 +7,10 @@ const userServices = {
   signUp: async (req, cb) => {
     const { name, email, password, passwordCheck } = req.body
     try {
-      if (!name) {
-        throw new Error('Name is required!')
-      }
-      if (!email) {
-        throw new Error('Email is required!')
-      }
-      if (password !== passwordCheck) {
-        throw new Error('Passwords do not match')
-      }
+      if (!name) return cb(new Error('Name is required!'))
+      if (!email) return cb(new Error('Email is required!'))
+      if (password !== passwordCheck) return cb(new Error('Passwords do not match'))
+
       const user = await User.findOne({ where: { email: email.toLowerCase() } })
       if (user) {
         throw new Error('Email already exists')
@@ -33,6 +28,8 @@ const userServices = {
   },
   signIn: async (req, cb) => {
     try {
+      if (!req.user) return cb(new Error('Invalid credentials'))
+
       const userData = req.user.toJSON()
       delete userData.password
       const payload = {
@@ -50,8 +47,12 @@ const userServices = {
   },
   signOut: async (req, cb) => {
     const token = req.headers.authorization.split(' ')[1]
+    if (!token) return cb(new Error('No Token Provided!'))
+
     const decodedToken = jwt.decode(token)
     const jti = decodedToken.jti
+    if (!jti) return cb(new Error('Invalid Token'))
+
     req.logout(err => {
       if (err) {
         return cb(err)
