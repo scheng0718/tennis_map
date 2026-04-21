@@ -44,7 +44,7 @@ passport.use(new JWTStrategy(jwtOptions, async (jwtPayload, cb) => {
     }
     const user = await User.findByPk(jwtPayload.userId, {
       include: [
-        { model: TennisCourt, as: 'FavortiedCourts' }
+        { model: TennisCourt, as: 'FavoritedCourts' }
       ]
     })
     if (user) {
@@ -64,7 +64,7 @@ passport.deserializeUser(async (userId, cb) => {
   try {
     const user = await User.findByPk(userId, {
       include: [
-        { model: TennisCourt, as: 'FavortiedCourts' }
+        { model: TennisCourt, as: 'FavoritedCourts' }
       ]
     })
     return cb(null, user.toJSON())
