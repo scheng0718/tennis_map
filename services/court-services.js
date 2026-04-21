@@ -42,6 +42,9 @@ const courtServices = {
     const maxLat = parseFloat(req.query.maxLat)
     const minLng = parseFloat(req.query.minLng)
     const maxLng = parseFloat(req.query.maxLng)
+    if ([minLat, maxLat, minLng, maxLng].some(isNaN)) {
+      return cb(Object.assign(new Error('Invalid coordinates'), { status: 400 }))
+    }
     try {
       const tennisCourts = await TennisCourt.findAll({
         where: {
@@ -63,6 +66,9 @@ const courtServices = {
     const userLat = parseFloat(req.query.latitude)
     const userLng = parseFloat(req.query.longitude)
     const radius = parseFloat(req.query.radius)
+    if ([userLat, userLng, radius].some(isNaN)) {
+      return cb(Object.assign(new Error('Invalid coordinates or radius'), { status: 400 }))
+    }
     try {
       const tennisCourts = await TennisCourt.findAll({
         where: Sequelize.where(
