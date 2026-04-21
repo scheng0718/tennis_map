@@ -3,6 +3,7 @@ const router = express.Router()
 const userController = require('../controllers/user-controller')
 const courtController = require('../controllers/court-controller')
 const commentController = require('../controllers/comment-controller')
+const favoriteController = require('../controllers/favorite-controller')
 const navigationController = require('../controllers/navigation-controller')
 const admin = require('./modules/admin')
 const passport = require('../config/passport')
@@ -18,6 +19,13 @@ router.get('/courts/:courtId', authenticated, courtController.getCourt)
 router.get('/courts', authenticated, courtController.getCourts)
 
 router.get('/comments/:courtId', authenticated, commentController.getCommentsByCourt)
+router.post('/comments/:courtId', authenticated, commentController.createComment)
+router.put('/comments/:commentId', authenticated, commentController.updateComment)
+router.delete('/comments/:commentId', authenticated, commentController.deleteComment)
+
+router.get('/favorites', authenticated, favoriteController.getFavorites)
+router.post('/favorites/:courtId', authenticated, favoriteController.addFavorite)
+router.delete('/favorites/:courtId', authenticated, favoriteController.removeFavorite)
 
 router.get('/navigation/:courtId', authenticated, navigationController.getDirection)
 
