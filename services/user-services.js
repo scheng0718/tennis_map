@@ -1,7 +1,7 @@
 const { User } = require('../models')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const uuid = require('uuid')
+const { randomUUID } = require('crypto')
 const redisClient = require('../config/redisConfig')
 const userServices = {
   signUp: async (req, cb) => {
@@ -34,7 +34,7 @@ const userServices = {
       delete userData.password
       const payload = {
         ...userData,
-        jti: uuid.v4()
+        jti: randomUUID()
       }
       const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' })
       return cb(null, {
@@ -46,18 +46,19 @@ const userServices = {
     }
   },
   signOut: async (req, cb) => {
+    if (!req.headers.authorization) return cb(new Error('No Token Provided!'))
     const token = req.headers.authorization.split(' ')[1]
     if (!token) return cb(new Error('No Token Provided!'))
 
     const decodedToken = jwt.decode(token)
-    const jti = decodedToken.jti
+    const jti = decodedToken && decodedToken.jti
     if (!jti) return cb(new Error('Invalid Token'))
 
-    req.logout(err => {
+    req.logout(async err => {
       if (err) {
         return cb(err)
       } else {
-        redisClient.set(`blacklist_${jti}`, 'blacklisted', 'EX', 4000)
+        await redisClient.set(`blacklist_${jti}`, 'blacklisted', { EX: 3600 })
         return cb(null, { message: 'Successfully signed out!' })
       }
     })
